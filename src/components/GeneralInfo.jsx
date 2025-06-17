@@ -15,8 +15,8 @@ const GeneralInfo = ({ onSubmit }) => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        const { name, email, phone } = formData;
-        if (!name || !email || !phone) {
+        // const { name, email, phone } = formData;
+        if (!formData.name || !formData.email || !formData.phone) {
             alert("All fields must be filled")
             return;
         }
